@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <h1>Validasi</h1>
+      <form action=".">
+         <p>
+            <label for="uname">Username : </label
+            ><input type="text" id="uname" placeholder="Username" required 
+            name="uname"/>
+         </p>
+         <p>
+            <label for="passwd">Password : </label
+            ><input
+               type="password"
+               id="passwd"
+               placeholder="Password"
+               minlength="8"
+               maxlength="20"
+               pattern="[a-zA-Z]+"
+               name="passwd"
+               required
+            />
+         </p>
+         <p>
+             <label for="mail">Email :  </label>
+             <input type="email" name="email" id="mail" placeholder="Email">
+         </p>
+         <p>
+             <label for="angka">Pilih angka : </label>
+             <input type="number" min="1" max="10" step="2" name="num">
+         </p>
+         <p><button>Kirim</button></p>
+      </form>
+   </body>
+</html>

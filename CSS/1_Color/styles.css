@@ -1,0 +1,17 @@
+h1{
+    color: rgb(0,128,0);
+}
+
+h2{
+    color: #f0f; /* #FF00FF */
+}
+
+p{
+    color: white;
+    background-color: black;
+}
+
+button{
+    color: #ff0000;
+    background-color: pink;
+}

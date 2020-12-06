@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Race Regitration Form</title>
+   </head>
+   <body>
+      <h1>Race Registration!</h1>
+      <form action=".">
+         <section>
+            <p>
+               <label for="fname">First Name: </label
+               ><input
+                  type="text"
+                  placeholder="First Name"
+                  required
+                  name="fname"
+                  id="fname"
+               />
+            </p>
+            <p>
+               <label for="lname">Last Name: </label
+               ><input
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                  name="lname"
+                  id="lname"
+               />
+            </p>
+         </section>
+         <section>
+            <p>Select a Race:</p>
+            <p>
+               <input
+                  type="radio"
+                  name="type"
+                  value="funrun"
+                  id="funrun"
+                  required
+               /><label for="funrun">Fun Run 5k</label>
+            </p>
+            <p>
+               <input
+                  type="radio"
+                  name="type"
+                  value="halfmar"
+                  id="halfmar"
+               /><label for="halfmar">Half Marathon</label>
+            </p>
+            <p>
+               <input
+                  type="radio"
+                  name="type"
+                  value="fullmar"
+                  id="fullmar"
+               /><label for="fullmar">Full Marathon</label>
+            </p>
+         </section>
+         <section>
+            <p>
+               <label for="email">Email : </label
+               ><input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+               />
+            </p>
+            <p>
+               <label for="passwd">Password : </label
+               ><input
+                  type="password"
+                  name="passwd"
+                  id="passwd"
+                  placeholder="Password"
+                  required
+               />
+            </p>
+         </section>
+         <section>
+             <label for="age">Select Age Group: </label>
+             <select name="age" id="age" required>
+                 <option value="" disabled selected>Choose Age Group</option>
+                 <option value="b18">Under 18</option>
+                 <option value="18ut30">18-30</option>
+                 <option value="30ut50">30-50</option>
+                 <option value="u50">50+</option>
+             </select>
+         </section>
+         <section>
+            <button>Register!</button>
+         </section>
+      </form>
+   </body>
+</html>

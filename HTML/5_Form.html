@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Form</title>
+   </head>
+   <body>
+      <h1>Forms Demo</h1>
+      <section>
+         <h2>Ini Dasar</h2>
+         <form action="#" method="get">
+            <!-- Baca : 
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+            <p>
+               <label for="uname">Username : </label>
+               <input
+                  type="text"
+                  placeholder="Username"
+                  name="uname"
+                  id="uname"
+               />
+            </p>
+            <p>
+               <!-- Ini cara labelin yg disarankan -->
+               <label for="passwd">Masukin Password : </label>
+               <input
+                  type="password"
+                  id="passwd"
+                  name="passwd"
+                  placeholder="Password"
+               />
+            </p>
+            <p>
+               <label>Tanggal Lahir : <input type="date" name="birth" /></label>
+            </p>
+            <p>
+               <!-- Lebih disarankan -->
+               <button type="button">Aku gaakan kumpulin!</button>
+               <button type="submit">Kumpuliin</button>
+               <button type="reset">Ulangi</button>
+
+               <!-- Kurang direkomendasikan -->
+               <input type="submit" />
+               <input type="reset" />
+            </p>
+         </form>
+      </section>
+
+      <hr />
+
+      <section>
+         <h2>Ini Button</h2>
+         <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" placeholder="Keyword" />
+            <button>Pang cariin di google...</button>
+         </form>
+      </section>
+
+      <hr />
+
+      <section>
+         <h2>Coba Checkbox</h2>
+         <form action="#">
+            <input type="checkbox" name="setuju" id="setuju" />
+            <label for="setuju">Aku Setuju</label>
+            <button type="submit">Kirim</button>
+         </form>
+      </section>
+
+      <hr />
+
+      <section>
+         <h2>Coba Radiobutton</h2>
+         <form action=".">
+            <p>Pilih kota yang kamu mau:</p>
+            <p>
+               <input type="radio" name="kota" id="jakarta" value="jakarta" />
+               <label for="jakarta">Jakarta</label>
+            </p>
+            <p>
+               <input type="radio" name="kota" id="bandung" value="bandung" />
+               <label for="bandung">Bandung</label>
+            </p>
+            <p>
+               <input
+                  type="radio"
+                  name="kota"
+                  id="palembang"
+                  value="palembang"
+               />
+               <label for="palembang">Palembang</label>
+            </p>
+            <button>Kirim</button>
+         </form>
+      </section>
+
+      <hr>
+
+      <section>
+         <h2>Coba Dropdown</h2>
+         <form action=".">
+            <label for="hewan">Pilih hewan yang kamu suka : </label>
+            <select name="pet" id="hewan" required>
+               <option value="" selected disabled>Pilih Hewan</option>
+               <optgroup label="Unggas">
+                  <option value="1">Ayam</option>
+                  <option value="2">Bebek</option>
+               </optgroup>
+               <optgroup label="Mamalia">
+                  <option value="3">Kucing</option>
+               </optgroup>
+            </select>
+            <button>Kirim</button>
+         </form>
+      </section>
+   </body>
+</html>
