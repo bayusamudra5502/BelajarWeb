@@ -1,0 +1,27 @@
+body {
+    background-color: #fee9e1;
+}
+
+button {
+    font-size: 12pt;
+    background-color: #fad4c0;
+}
+
+h1, h2 {
+    color: black;
+}
+
+#signup{
+    background-color: #64B6AC;
+    border: 2pt solid black;
+}
+
+span{
+    color: darkgoldenrod;
+}
+
+.tag {
+    background-color: red;
+    color:white;
+    font-size: small;
+}
