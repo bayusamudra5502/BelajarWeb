@@ -1,0 +1,37 @@
+div{
+    background-color: chocolate;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    height: 5rem;
+    width: 20rem;
+    margin: 30px auto;
+    border: .5rem black solid;
+}
+
+.satu{
+    transform: rotate(50deg);
+}
+
+.dua{
+    transform-origin: top left;
+    /* transform: rotate(45deg); */
+}
+
+.tiga{
+    transition: 1s ease-in-out;
+}
+
+.tiga:hover{
+    transform: rotateY(360deg);
+}
+
+div:nth-of-type(4){
+    transform: scale(1.2);
+    transform: scale(1.2,1.2);
+}
+
+div:nth-of-type(5){
+    transform: translate(50px,50px) skew(45deg);
+}
