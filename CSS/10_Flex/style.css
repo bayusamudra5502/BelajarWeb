@@ -16,27 +16,30 @@ h1{
     background-color: #3d405b;
     margin: auto;
     width: 80%;
-    height: 250px;
+    height: 500px;
 
     /* INI */
     display: flex;
 
     /* MAIN AXIS */
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
 
     /* CROSS AXIS */
     flex-wrap: wrap;
-    align-items: flex-end;
-    /* align-content: center; */
+    align-items: flex-start; /* SUSUNAN OBJEK PADA TIAP BARIS (PADA DIRECTION ROW) */
+    align-content: space-between; /* SUSUNAN BARISNYA GIMANA */
+
 }
 
 .satu{
     background-color: #f2cc8f;
+
 }
 
 .dua{
     background-color: #81b29a;
+    height: 200px;
 }
 
 .tiga{
@@ -50,4 +53,8 @@ h1{
 div{
     height: 100px;
     width: 100px;
+}
+
+#Aneh{
+    align-self: center;
 }

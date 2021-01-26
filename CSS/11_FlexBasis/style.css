@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+h1{
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px;
+}
+
+.container{
+    background-color: #3d405b;
+    margin: auto;
+    width: 80%;
+    padding: 5px;
+    /* height: 500px; */
+
+    /* INI */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.satu{
+    background-color: #f2cc8f;
+
+}
+
+.dua{
+    background-color: #81b29a;
+}
+
+.tiga{
+    background-color: #e07a5f;
+    flex-grow: 1;
+    /* TIDAK AKAN PERNAH MENGECIL SAMPE KURANG DARI FLEX BASIS */
+    flex-shrink: 0;
+}
+
+.empat{
+    background-color: #f4f1de;
+}
+
+div{
+    height: 100px;
+
+    /* Ini itu mirip sama flex-basis di row direction */
+    /* min-width: 100px;  */
+    /* max-width: 300; */
+    flex-basis: 200px;
+
+    /* NURUT SAMA FLEX BASIS */
+    flex-grow: 1;
+}

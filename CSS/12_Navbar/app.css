@@ -1,0 +1,51 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+ul,li {
+    display: inline;
+    margin: 0 10px;
+    padding: 0;
+    /* list-style: none; */
+}
+
+ul{
+    flex: 1;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 560px){
+    h1{
+        font-size: 3em;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 320px){
+    h1{
+        font-size: 2em;
+    }
+}
+
