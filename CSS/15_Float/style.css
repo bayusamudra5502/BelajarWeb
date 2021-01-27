@@ -1,0 +1,26 @@
+.container{
+    border: 2px solid black;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+}
+
+.kotak{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: darkcyan;
+    line-height: 100px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+}
+
+.container:after{
+    content: "";
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    display: block;
+}
