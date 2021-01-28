@@ -1,0 +1,61 @@
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+#navbarUtama{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    max-width: 100vw;
+    background-color: transparent;
+    transition: background-color 500ms ease-in-out;
+}
+
+#navbarUtama .navbar-brand{
+    color: #ea1c2c;
+}
+
+#navbarUtama .nav-link{
+    color: white;
+}
+
+#navbarUtama .nav-link:hover{
+    color: #ea1c2c;
+}
+
+
+h2.nama{
+    text-transform: uppercase;
+}
+
+#jumbotron span{
+    color:#ea1c2c;
+}
+
+#jumbotron h2{
+    font-weight: 300;
+}
+
+.col-10 > h2{
+    color: #ea1c2c;
+    font-weight: 200;
+}
+
+p.lead{
+    color:#f498b8;
+    line-height:2;
+}
+
+.post{
+    margin-top: 100px;
+}
+
+#navbarUtama.scrolled{
+    background-color: rgb(222,192,222);
+}
