@@ -3,8 +3,8 @@ desktop.ini
 node_modules/
 
 package-lock.json
-package.json
-.eslintrc.js
+# package.json
+# .eslintrc.js
 
 skip/
 _*/

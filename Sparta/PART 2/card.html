@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+    Publish Site : https://letter.spartacodingclub.kr/akVbiGn9NuHg/card.html
+    -->
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Congratulation!</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #e8344e;
+                font-family: "Yusei Magic", sans-serif;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                height: 100vh;
+            }
+
+            .envelope {
+                max-width: 200px;
+                height: 200px;
+                background: url("https://pngimg.com/uploads/envelope/envelope_PNG18366.png");
+                background-position: center;
+                background-size: cover;
+                cursor: pointer;
+
+                margin: 0 auto 30px;
+            }
+
+            .message {
+                color: white;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+
+            .letter-closed {
+                display: block;
+            }
+
+            .character {
+                background-color: white;
+                max-width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 5px solid white;
+                box-shadow: 0 0 10px white;
+                margin: auto;
+            }
+
+            .message-letter {
+                text-align: center;
+                color: white;
+            }
+
+            .letter-opened {
+                max-width: 400px;
+                margin: auto;
+                display: none;
+            }
+
+            .letter-opened h2 {
+                color: white;
+                text-align: center;
+            }
+
+            .message-letter {
+                margin-top: 50px;
+                background-color: ivory;
+                color: brown;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            @media screen and (max-width: 375px) {
+                .message-letter {
+                    padding: 10px;
+                }
+            }
+        </style>
+
+        <meta
+            property="og:image"
+            content="https://images.unsplash.com/photo-1531686264889-56fdcabd163f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+        />
+        <meta property="og:description" content="Go check out my card!" />
+        <meta property="og:title" content="Congratulation!" />
+
+        <!-- 
+            This favicon was taken from Twemoji (CC-BY 4.0).
+            See https://twemoji.twitter.com/
+         -->
+        <link
+            rel="shortcut icon"
+            href="https://api.iconify.design/twemoji:confetti-ball.svg"
+        />
+    </head>
+    <body>
+        <div class="letter-closed">
+            <div class="envelope" onclick="openLetter()"></div>
+            <h2 class="message">Please click this envelope!</h2>
+        </div>
+
+        <div class="letter-opened">
+            <div class="character" onclick="iconClick()"></div>
+            <h2>Congratulation!</h2>
+            <div class="message-letter">
+                <p>Dear Someone,</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur ad iure veniam obcaecati exercitationem
+                    repellendus fuga itaque excepturi! Nobis ab laborum deleniti
+                    earum iste maxime harum nam accusamus at, voluptas dolorum
+                    blanditiis assumenda repudiandae iusto tempora a pariatur
+                    quidem debitis quasi voluptatibus. Vel, natus dolores minus
+                    corrupti molestias fuga reiciendis.
+                </p>
+                <p>
+                    Love, <br />
+                    Someone
+                </p>
+            </div>
+        </div>
+
+        <script>
+            function openLetter() {
+                let links = [
+                    "https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/SpartaIcon8.gif",
+                    "https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/SpartaIcon36.gif",
+                    "https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/SpartaIcon41.gif",
+                    "https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/SpartaIcon7.gif",
+                ];
+
+                let rand = Math.floor(Math.random() * 4);
+                let template = `url("${links[rand]}") center/85% white no-repeat`;
+
+                document.getElementsByClassName(
+                    "character"
+                )[0].style.background = template;
+
+                document.getElementsByClassName(
+                    "letter-opened"
+                )[0].style.display = "block";
+                document.getElementsByClassName(
+                    "letter-closed"
+                )[0].style.display = "none";
+            }
+
+            function iconClick() {
+                alert("Yay.. You found me!");
+                window.location.href = "https://youtu.be/_z-1fTlSDF0";
+            }
+        </script>
+        <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/confetti.js"></script>
+    </body>
+</html>

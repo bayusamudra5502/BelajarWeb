@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+
+        <style>
+            body {
+                display: flex;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+                background-color: #dee2e6;
+                justify-content: center;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .judulKotak {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background: url("https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg");
+                background-size: cover;
+                background-position: center;
+                color: white;
+                width: 300px;
+                height: 200px;
+                padding-top: 80px;
+                box-sizing: border-box;
+                line-height: 0.2;
+                border-radius: 10px;
+            }
+
+            .container {
+                background-color: #f8f9fa;
+                margin: auto;
+                width: 300px;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            label {
+                display: block;
+            }
+
+            input {
+                border: 1px solid #dee2e6;
+                padding: 10px;
+                width: 270px;
+                margin: 10px auto 5px;
+                border-radius: 10px;
+            }
+
+            button {
+                margin: 20px auto;
+                display: block;
+                padding: 15px;
+                width: 50px;
+                box-sizing: content-box;
+                background-color: #495057;
+                color: white;
+                border: 0;
+                letter-spacing: 0.5px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 200ms ease-in-out;
+            }
+
+            button:hover {
+                background-color: #212529;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="judulKotak">
+                <h1>Login Page</h1>
+                <p>Type your ID and PW below!</p>
+            </div>
+            <form action="#" method="get">
+                <p>
+                    <label for="id">ID</label>
+                    <input type="text" name="id" id="id" placeholder="ID" />
+                </p>
+                <p>
+                    <label for="passwd">PW</label>
+                    <input
+                        type="password"
+                        name="passwd"
+                        id="passwd"
+                        placeholder="Password"
+                    />
+                </p>
+                <p><button type="submit">Login</button></p>
+            </form>
+        </div>
+    </body>
+</html>
