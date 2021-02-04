@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ping Pong Keeper</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="card shadow-lg" style="width: 25rem">
+            <img
+                src="https://images.unsplash.com/photo-1576617497557-22895ee5930b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                class="card-img-top"
+                alt="Ping pong"
+            />
+            <div class="card-body">
+                <h5 class="card-title">Ping Pong Keeper</h5>
+                <div class="card-text">
+                    <p class="h1 text-center">
+                        <span id="pemain1">0</span> vs
+                        <span id="pemain2">0</span>
+                    </p>
+                    <p>
+                        Gunakan tombol dibawah untuk menyimpan skor yang
+                        didapatkan oleh salah satu tim.
+                    </p>
+                    <p class="bolded">Jumlah skor kemenangan :</p>
+                    <select
+                        class="form-select"
+                        aria-label="Kemenangan"
+                        id="poin-menang"
+                    >
+                        <option value="null" selected disabled>
+                            Pilih Skor
+                        </option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="mt-4 p-0">
+                    <div
+                        class="btn-group w-100"
+                        role="group"
+                        aria-label="Basic example"
+                    >
+                        <button
+                            type="button"
+                            class="btn btn-success"
+                            id="add-first"
+                            disabled
+                        >
+                            +1 Pemain Pertama
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-danger"
+                            id="reset"
+                            disabled
+                        >
+                            Reset Skor Pemain
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-success"
+                            id="add-second"
+                            disabled
+                        >
+                            +1 Pemain Kedua
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"
+        ></script>
+        <script src="app.js"></script>
+    </body>
+</html>
