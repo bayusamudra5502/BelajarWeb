@@ -1,0 +1,18 @@
+<%- include("partial/head") %> 
+
+    <body>
+        <h1>Angka random mu adalah <%= rnd %></h1>
+        <h2>Ini versi num <%= num %></h2>
+
+        <% if(num % 2){ %>
+        <p>Kamu dapet angka ganjil</p>
+        <% }else{ %>
+        <p>Kamu dapet angka genap</p>
+        <% } %>
+
+        <!-- Ini untuk loop -->
+        <% for( let i = 0; i < num; i++ ) { %>
+        <p><%= i+1 %> : Looping</p>
+        <% } %>
+    </body>
+</html>

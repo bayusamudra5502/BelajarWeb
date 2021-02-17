@@ -1,0 +1,19 @@
+<%- include("partial/head") %> 
+
+    <body>
+        <h1><%= name %></h1>
+        <h2><%= description %></h2>
+        <p>Subsribers : <%= subscribers %></p>
+        <hr />
+
+        <h2>Daftar Pesan</h2>
+        <% posts.forEach(el => { %>
+        <h3><%= el.title %></h3>
+        <b><%= el.author %></b>
+        <% if (el.img) { %>
+        <p><img src="<%= el.img %> " alt="Ini gambar" /></p>
+        <% } %>
+        <hr />
+        <% }) %>
+    </body>
+</html>
