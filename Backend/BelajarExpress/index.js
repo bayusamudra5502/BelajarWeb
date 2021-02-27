@@ -49,6 +49,11 @@ app.get("/hitung", (req, res) => {
     }
 });
 
+// Redirect
+app.get("/pantul", (res, req) => {
+    req.redirect("/");
+});
+
 app.get("*", (req, res) => {
     // SIMPEN PALING BAWAH, ini untuk path sisanyaa
     res.send("KAMU NYASAR!!");
