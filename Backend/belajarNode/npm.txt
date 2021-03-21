@@ -25,6 +25,7 @@ npm delete init-license
 npm install lodash --save (or npm install --save lodash)
 npm install moment --save
 npm install gulp gulp-sass --save-dev
+npm install -d gulp # EKivalen sama yang diatas
 
 # MOVE TO ANOTHER FOLDER
 npm install

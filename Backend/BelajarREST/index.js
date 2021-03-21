@@ -7,6 +7,15 @@ const comments = {};
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); // Biar bisa nerima JSON
 
+// Method override
+const methodOverride = require("method-override");
+app.use(methodOverride("_method"));
+/* 
+    <form method="POST" action="/resource?_method=DELETE">
+    <button type="submit">Delete resource</button>
+    </form>
+*/
+
 app.get("/", (req, res) => {
     res.send("<h1>Halo Dunia</h1>");
 });
